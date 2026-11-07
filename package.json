@@ -4,9 +4,7 @@
   "version": "0.2.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently -k \"npm:dev:web\" \"npm:dev:api\"",
-    "dev:web": "vite",
-    "dev:api": "node server/index.js",
+    "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
@@ -20,8 +18,7 @@
     "express": "latest",
     "helmet": "latest",
     "express-rate-limit": "latest",
-    "dotenv": "latest",
-    "concurrently": "latest"
+    "dotenv": "latest"
   },
   "devDependencies": {
     "@types/react": "latest",
