@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "concurrently -k \"npm:dev:web\" \"npm:dev:api\"",
     "dev:web": "vite",
-    "dev:api": "node --watch server/index.js",
+    "dev:api": "node server/index.js",
     "build": "tsc -b && vite build",
     "preview": "vite preview"
   },
