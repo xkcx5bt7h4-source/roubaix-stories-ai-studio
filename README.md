@@ -18,6 +18,10 @@ Phase 1 — browser dashboard foundation.
 - AI providers: OpenRouter free routes and Gemini free tier, subject to quotas and provider terms.
 - Game technology: Babylon.js is the current candidate for the browser game; performance must be tested on the target Mac M1 with 8 GB RAM.
 
+## Secure API backend
+
+The Express API is in `server/index.js`. Configure `STUDIO_ACCESS_TOKEN`, `GEMINI_API_KEY`, `GEMINI_MODEL`, and/or `OPENROUTER_API_KEY` as server-side environment secrets. Never commit real values. The API is protected by a studio access token, rate limited, and uses Helmet. OpenRouter requests are pinned to the free router (`openrouter/free`) with no paid fallback. The backend and Vite frontend start together with `npm run dev`.
+
 ## Run the dashboard locally
 ```bash
 npm install
