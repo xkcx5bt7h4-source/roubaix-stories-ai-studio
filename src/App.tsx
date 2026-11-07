@@ -1,4 +1,5 @@
 import { useState } from "react";
+import ApiSettings from "./ApiSettings";
 import {
   Activity, Bot, Boxes, BrainCircuit, Code2, Gauge, GitBranch,
   LayoutDashboard, LockKeyhole, MessageSquare, Play, ShieldCheck,
@@ -57,6 +58,7 @@ export default function App() {
           <article className="panel status-panel"><div className="panel-title"><div><span className="eyebrow">ÉTAT DU SYSTÈME</span><h3>Fondations</h3></div><Activity size={20}/></div><div className="check-row"><span className="check">✓</span><div><b>Interface React</b><small>Structure du tableau de bord</small></div><span className="tag done">PRÊT</span></div><div className="check-row"><span className="check">✓</span><div><b>Dépôt GitHub</b><small>Code source centralisé</small></div><span className="tag done">PRÊT</span></div><div className="check-row"><span className="pending">○</span><div><b>Serveur sécurisé</b><small>Gestion des clés API</small></div><span className="tag wait">À FAIRE</span></div><div className="check-row"><span className="pending">○</span><div><b>Agents connectés</b><small>OpenRouter + Gemini</small></div><span className="tag wait">À FAIRE</span></div></article>
         </section>
         <div className="notice"><LockKeyhole size={16}/><span>{notice}</span></div>
+        <ApiSettings />
         <footer>ROUBAIX STORIES AI STUDIO <span>·</span> PRIVATE WORKSPACE <span>·</span> 2026</footer>
       </section>
     </main>
